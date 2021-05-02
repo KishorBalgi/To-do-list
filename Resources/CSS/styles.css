@@ -128,8 +128,8 @@ button {
   align-items: center;
 }
 .task-block {
-  display: inline-block;
   width: 90%;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,6 +139,10 @@ button {
   border: 5px solid grey;
   padding: 10px;
   margin-bottom: 15px;
+}
+.task-block p {
+  display: block;
+  width: 90%;
 }
 .options {
   display: -webkit-box;
