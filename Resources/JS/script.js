@@ -18,7 +18,7 @@ addme.addEventListener("click", function () {
     }, 1000);
   } else {
     tasks.push(task.value);
-    addtask(tasks.indexOf(task.value));
+    addtask(tasks.lastIndexOf(task.value));
     task.value = "";
   }
 });
