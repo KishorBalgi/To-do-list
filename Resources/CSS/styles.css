@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 html,
@@ -20,14 +21,22 @@ h1 {
 }
 /* Main */
 main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   width: 1140px;
   margin: 0 auto;
 }
 /* Task Input */
 .task-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   margin: 15px 15px 30px 15px;
 }
@@ -36,6 +45,7 @@ main {
   width: 85%;
   height: 50px;
   border: none;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 *:focus {
@@ -50,28 +60,40 @@ button {
 .add-me {
   width: 10%;
   border-radius: 3%;
+  -webkit-transition: background-color 0.2s, -webkit-transform 0.2s;
+  transition: background-color 0.2s, -webkit-transform 0.2s;
   transition: transform 0.2s, background-color 0.2s;
+  transition: transform 0.2s, background-color 0.2s, -webkit-transform 0.2s;
 }
 .add-me:hover {
   background-color: rgb(97, 228, 97);
+  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 .check {
   font-size: 25px;
   color: green;
+  -webkit-transition: color 0.2s, -webkit-transform 0.2s;
+  transition: color 0.2s, -webkit-transform 0.2s;
   transition: transform 0.2s, color 0.2s;
+  transition: transform 0.2s, color 0.2s, -webkit-transform 0.2s;
 }
 .check:hover {
   color: rgb(3, 189, 3);
+  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 .delete {
   font-size: 25px;
   color: rgb(194, 1, 1);
+  -webkit-transition: color 0.2s, -webkit-transform 0.2s;
+  transition: color 0.2s, -webkit-transform 0.2s;
   transition: transform 0.2s, color 0.2s;
+  transition: transform 0.2s, color 0.2s, -webkit-transform 0.2s;
 }
 .delete:hover {
   color: red;
+  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 .clear {
@@ -82,30 +104,48 @@ button {
   border-radius: 3%;
   margin: 0 auto;
   padding: 10px 10px;
+  -webkit-transition: background-color 0.2s, -webkit-transform 0.2s;
+  transition: background-color 0.2s, -webkit-transform 0.2s;
   transition: transform 0.2s, background-color 0.2s;
+  transition: transform 0.2s, background-color 0.2s, -webkit-transform 0.2s;
 }
 .clear:hover {
   background-color: rgb(90, 87, 87);
+  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 /* Task Display */
 .task-display {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .task-block {
   display: inline-block;
   width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   border: 5px solid grey;
   padding: 10px;
   margin-bottom: 15px;
 }
 .options {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 10%;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 /* Profile and Links */
@@ -149,6 +189,8 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   width: 150px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 8px 0 0 250px;
 }
